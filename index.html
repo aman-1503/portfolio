@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aman Prabhune — Full-Stack Engineer & AI Systems Builder. Portfolio showcasing projects, experience, and skills." />
+  <title>Aman Prabhune | Full-Stack Engineer & AI Systems Builder</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Devicon for skill logos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<nav id="navbar">
+  <div class="container">
+    <a href="#hero" class="nav-logo">&lt;<span>AP</span> /&gt;</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about"      onclick="closeMobile()">About</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#projects"   onclick="closeMobile()">Projects</a>
+  <a href="#skills"     onclick="closeMobile()">Skills</a>
+  <a href="#education"  onclick="closeMobile()">Education</a>
+  <a href="#contact"    onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero">
+  <canvas id="particle-canvas"></canvas>
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Text -->
+      <div class="hero-text">
+        <p class="hero-greeting">👋 Hello, World! I'm</p>
+        <h1 class="hero-name">Aman <span class="highlight">Prabhune</span></h1>
+        <p class="hero-role">
+          <span class="typewriter" id="typewriter"></span><span class="cursor"></span>
+        </p>
+        <p class="hero-tagline">
+          Building intelligent, scalable systems at the intersection of
+          <strong>Full-Stack Engineering</strong> and <strong>AI</strong>.
+          Currently at <strong>CMU Heinz College</strong>.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-paper-plane"></i> Get in Touch
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Photo -->
+      <div class="hero-photo">
+        <div class="photo-wrapper">
+          <img
+            src="profile.jpg"
+            alt="Aman Prabhune"
+            class="profile-img"
+            id="profile-img"
+            onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex';"
+          />
+          <div class="profile-fallback" id="profile-fallback" style="display:none;">AP</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-grid">
+
+      <div class="about-text fade-in">
+        <p>
+          I'm <strong>Aman Prabhune</strong>, a <span class="accent">Full-Stack Engineer</span>
+          and <span class="accent">AI Systems Builder</span> currently pursuing my
+          <strong>Master of Information Systems Management</strong> at
+          <strong>Carnegie Mellon University, Heinz College</strong>.
+        </p>
+        <p>
+          With hands-on industry experience across <strong>automation engineering</strong>,
+          <strong>CI/CD pipelines</strong>, and <strong>ML-powered applications</strong>,
+          I love crafting software that is both technically rigorous and genuinely useful.
+        </p>
+        <p>
+          At CMU's Corporate Startup Lab, I lead AI opportunity scoping for
+          <strong>Hellbender</strong>, driving stakeholder interviews and shaping
+          scalable AI strategy across multiple verticals. I thrive at the crossroads
+          of engineering depth and product thinking.
+        </p>
+        <p>
+          When I'm not coding, you'll find me exploring new AI research, contributing
+          to open-source projects, or mentoring peers.
+        </p>
+      </div>
+
+      <div class="about-stats fade-in fade-in-delay-2">
+        <div class="stat-card">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Years of Experience</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">90%</span>
+          <span class="stat-label">Testing Automation</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">BDD Test Modules</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3K+</span>
+          <span class="stat-label">RPS Under Load</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERIENCE
+     ============================================================ -->
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title">Work <span>Experience</span></h2>
+    <div class="timeline">
+
+      <!-- 1 -->
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot">🤖</div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <span class="timeline-role">AI Systems Lead</span>
+            <span class="timeline-date">Jan 2026 – Present</span>
+          </div>
+          <div class="timeline-company">Hellbender | CMU Corporate Startup Lab</div>
+          <ul class="timeline-bullets">
+            <li>Selected among 200+ peers to partner with Hellbender's leadership team on AI strategy.</li>
+            <li>Leading AI opportunity scoping across 5+ business verticals, identifying high-impact use cases.</li>
+            <li>Drove 50+ stakeholder interviews to shape a scalable, recurring AI strategy roadmap.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="timeline-item fade-in fade-in-delay-1">
+        <div class="timeline-dot">⚙️</div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <span class="timeline-role">Software Engineer</span>
+            <span class="timeline-date">Jun 2024 – Aug 2025</span>
+          </div>
+          <div class="timeline-company">eQ Technologic</div>
+          <ul class="timeline-bullets">
+            <li>Built automation framework in Java, Selenium, and Maven — reduced manual testing by <strong>90%</strong>.</li>
+            <li>Designed CI/CD pipelines using Jenkins, Docker, Kubernetes, and Helm for seamless deployments.</li>
+            <li>REST API automation with Rest Assured; performance testing handling <strong>100+ concurrent users</strong> via JMeter.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="timeline-item fade-in fade-in-delay-2">
+        <div class="timeline-dot">🧪</div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <span class="timeline-role">Software Engineer Intern</span>
+            <span class="timeline-date">Jan 2024 – Jun 2024</span>
+          </div>
+          <div class="timeline-company">eQ Technologic</div>
+          <ul class="timeline-bullets">
+            <li>Wrote <strong>500+ reusable BDD test modules</strong> with Cucumber, TestNG, and JUnit; achieved 72% code coverage via JaCoCo.</li>
+            <li>Integrated enterprise authentication: SAML, OAuth, OIDC, and LDAP for secure enterprise platforms.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="timeline-item fade-in fade-in-delay-3">
+        <div class="timeline-dot">💻</div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <span class="timeline-role">Software Intern</span>
+            <span class="timeline-date">Jan 2023 – May 2023</span>
+          </div>
+          <div class="timeline-company">Pune Institute of Computer Technology</div>
+          <ul class="timeline-bullets">
+            <li>Built a full-stack event management platform using React, Next.js, Node.js, and MongoDB.</li>
+            <li>Developed ML-based synopsis evaluation with Python and LangChain; improved accuracy to <strong>72%</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="timeline-item fade-in fade-in-delay-4">
+        <div class="timeline-dot">🧠</div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <span class="timeline-role">AI Intern</span>
+            <span class="timeline-date">Sep 2022 – Nov 2022</span>
+          </div>
+          <div class="timeline-company">IBM AICTE</div>
+          <ul class="timeline-bullets">
+            <li>Improved mental health prediction model by <strong>25%</strong> using TensorFlow and Keras.</li>
+            <li>Feature engineering pushed accuracy to <strong>69%</strong> with AUC of 0.73.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJECTS
+     ============================================================ -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card fade-in">
+        <div class="project-top">
+          <span class="project-icon">🦜</span>
+          <div class="project-links">
+            <a href="https://github.com/aman-1503" target="_blank" rel="noopener" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="project-name">TartanRAG — AI Document Intelligence System</div>
+          <div class="project-date">February 2026</div>
+        </div>
+        <p class="project-desc">
+          RAG-powered Q&A system delivering sub-2 second responses with dual LLM support, voice input, and 85% retrieval accuracy across 600+ document chunks.
+        </p>
+        <ul class="project-highlights">
+          <li>Sub-2s response time with 85% retrieval accuracy across 600+ chunks</li>
+          <li>Dual LLM architecture with voice input support</li>
+          <li>Built on ChromaDB vector store + LangChain orchestration</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">FastAPI</span>
+          <span class="tech-badge">Next.js</span>
+          <span class="tech-badge">ChromaDB</span>
+          <span class="tech-badge">LangChain</span>
+          <span class="tech-badge">Llama API</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card fade-in fade-in-delay-2">
+        <div class="project-top">
+          <span class="project-icon">🛡️</span>
+          <div class="project-links">
+            <a href="https://github.com/aman-1503" target="_blank" rel="noopener" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="project-name">Cloud-Native Distributed Fraud Intelligence Platform</div>
+          <div class="project-date">March 2026</div>
+        </div>
+        <p class="project-desc">
+          Real-time fraud scoring platform achieving sub-150ms latency and handling 3,000+ requests per second under load testing with XGBoost ML pipeline.
+        </p>
+        <ul class="project-highlights">
+          <li>Sub-150ms fraud scoring latency in production</li>
+          <li>3,000+ RPS throughput validated under load testing</li>
+          <li>XGBoost ML pipeline with real-time feature extraction</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">FastAPI</span>
+          <span class="tech-badge">XGBoost</span>
+          <span class="tech-badge">PostgreSQL</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS
+     ============================================================ -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Technical <span>Skills</span></h2>
+    <div class="skills-grid">
+
+      <!-- Programming -->
+      <div class="skill-category fade-in">
+        <div class="skill-category-title">Programming</div>
+        <div class="skill-items">
+          <div class="skill-item"><i class="devicon-java-plain colored"></i> Java</div>
+          <div class="skill-item"><i class="devicon-python-plain colored"></i> Python</div>
+          <div class="skill-item"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+          <div class="skill-item"><i class="devicon-typescript-plain colored"></i> TypeScript</div>
+          <div class="skill-item"><i class="devicon-postgresql-plain colored"></i> SQL</div>
+        </div>
+      </div>
+
+      <!-- Full-Stack -->
+      <div class="skill-category fade-in fade-in-delay-1">
+        <div class="skill-category-title">Full-Stack</div>
+        <div class="skill-items">
+          <div class="skill-item"><i class="devicon-react-original colored"></i> React</div>
+          <div class="skill-item"><i class="devicon-nextjs-original"></i> Next.js</div>
+          <div class="skill-item"><i class="devicon-tailwindcss-plain colored"></i> Tailwind</div>
+          <div class="skill-item"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
+          <div class="skill-item"><i class="devicon-django-plain colored"></i> Django</div>
+          <div class="skill-item"><i class="devicon-flask-original"></i> Flask</div>
+          <div class="skill-item"><i class="devicon-spring-plain colored"></i> Spring Boot</div>
+        </div>
+      </div>
+
+      <!-- Databases & Cloud -->
+      <div class="skill-category fade-in fade-in-delay-2">
+        <div class="skill-category-title">Databases &amp; Cloud</div>
+        <div class="skill-items">
+          <div class="skill-item"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</div>
+          <div class="skill-item"><i class="devicon-mongodb-plain colored"></i> MongoDB</div>
+          <div class="skill-item"><i class="devicon-mysql-plain colored"></i> MySQL</div>
+          <div class="skill-item"><i class="devicon-amazonwebservices-original colored"></i> AWS</div>
+          <div class="skill-item"><i class="devicon-docker-plain colored"></i> Docker</div>
+          <div class="skill-item"><i class="devicon-kubernetes-plain colored"></i> Kubernetes</div>
+          <div class="skill-item"><i class="devicon-git-plain colored"></i> Git</div>
+        </div>
+      </div>
+
+      <!-- AI / ML -->
+      <div class="skill-category fade-in fade-in-delay-3">
+        <div class="skill-category-title">AI / ML</div>
+        <div class="skill-items">
+          <div class="skill-item"><i class="devicon-tensorflow-original colored"></i> TensorFlow</div>
+          <div class="skill-item"><i class="devicon-pytorch-original colored"></i> PyTorch</div>
+          <div class="skill-item"><i class="devicon-python-plain colored"></i> Scikit-learn</div>
+          <div class="skill-item"><i class="devicon-python-plain colored"></i> LangChain</div>
+          <div class="skill-item"><i class="devicon-python-plain colored"></i> Hugging Face</div>
+          <div class="skill-item"><i class="devicon-pandas-original colored"></i> Pandas</div>
+          <div class="skill-item"><i class="devicon-numpy-original colored"></i> NumPy</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EDUCATION
+     ============================================================ -->
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">My <span>Education</span></h2>
+    <div class="education-grid">
+
+      <!-- CMU -->
+      <div class="edu-card fade-in">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-school">Carnegie Mellon University, Heinz College</div>
+        <div class="edu-location"><i class="fa-solid fa-location-dot"></i> Pittsburgh, PA</div>
+        <div class="edu-degree">Master of Information Systems Management</div>
+        <div class="edu-period">Aug 2025 – Dec 2026</div>
+        <div class="edu-courses">
+          <strong>Relevant Coursework</strong>
+          Cloud Computing · OOP in Java · Agile Methods ·
+          MLOps · Finance Analytics · Distributed Systems
+        </div>
+      </div>
+
+      <!-- PICT -->
+      <div class="edu-card fade-in fade-in-delay-2">
+        <div class="edu-icon">🏛️</div>
+        <div class="edu-school">Pune Institute of Computer Technology</div>
+        <div class="edu-location"><i class="fa-solid fa-location-dot"></i> Pune, India</div>
+        <div class="edu-degree">Bachelor of Engineering in Information Technology</div>
+        <div class="edu-period">Jun 2020 – Jul 2024</div>
+        <div class="edu-courses">
+          <strong>Relevant Coursework</strong>
+          Data Structures &amp; Algorithms · Machine Learning ·
+          Deep Learning · DBMS
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+    <div class="contact-wrapper">
+      <p class="contact-intro">
+        I'm currently open to new opportunities and collaborations.
+        Whether you have a role, a project idea, or just want to say hi —
+        my inbox is always open. Let's build something great together!
+      </p>
+      <div class="contact-links">
+
+        <a href="mailto:amanprabhune@cmu.edu" class="contact-item">
+          <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+          <div class="contact-detail">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">amanprabhune@cmu.edu</div>
+          </div>
+        </a>
+
+        <a href="tel:+14125154206" class="contact-item">
+          <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+          <div class="contact-detail">
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">(412) 515-4206</div>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/aman-prabhune" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon"><i class="fa-brands fa-linkedin"></i></span>
+          <div class="contact-detail">
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">aman-prabhune</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/aman-1503" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+          <div class="contact-detail">
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">aman-1503</div>
+          </div>
+        </a>
+
+      </div>
+
+      <a href="mailto:amanprabhune@cmu.edu" class="btn btn-primary" style="margin: 0 auto; display: inline-flex;">
+        <i class="fa-solid fa-paper-plane"></i> Say Hello
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">&lt;AP /&gt;</div>
+      <div class="footer-links">
+        <a href="https://github.com/aman-1503" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/aman-prabhune" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:amanprabhune@cmu.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-text">
+        Designed &amp; built by Aman Prabhune · 2025
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
