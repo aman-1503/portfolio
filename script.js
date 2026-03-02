@@ -5,10 +5,7 @@
 /* ---- Typewriter Effect ---- */
 (function () {
   const roles = [
-    'Full-Stack Engineer',
-    'AI Systems Builder',
     'Software Engineer',
-    'ML Engineer',
   ];
   const el = document.getElementById('typewriter');
   if (!el) return;
