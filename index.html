@@ -19,6 +19,35 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Hero: vertical centered layout */
+    .hero-inner {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-tagline { margin-left: auto; margin-right: auto; }
+    .hero-cta { justify-content: center; }
+
+    /* Timeline dot images */
+    .timeline-dot img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+      padding: 4px;
+      background: white;
+    }
+
+    /* Timeline dot text abbreviation */
+    .timeline-dot-text {
+      font-size: 0.62rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: 0.5px;
+    }
+  </style>
 </head>
 <body>
 
@@ -73,8 +102,8 @@
           Currently at <strong>CMU Heinz College</strong>.
         </p>
         <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">
-            <i class="fa-solid fa-rocket"></i> View Projects
+          <a href="#experience" class="btn btn-primary">
+            <i class="fa-solid fa-arrow-down"></i> View Work
           </a>
           <a href="#contact" class="btn btn-outline">
             <i class="fa-solid fa-paper-plane"></i> Get in Touch
@@ -132,25 +161,6 @@
         </p>
       </div>
 
-      <div class="about-stats fade-in fade-in-delay-2">
-        <div class="stat-card">
-          <span class="stat-number">3+</span>
-          <span class="stat-label">Years of Experience</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">90%</span>
-          <span class="stat-label">Testing Automation</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">500+</span>
-          <span class="stat-label">BDD Test Modules</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">3K+</span>
-          <span class="stat-label">RPS Under Load</span>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -165,7 +175,7 @@
 
       <!-- 1 -->
       <div class="timeline-item fade-in">
-        <div class="timeline-dot">🤖</div>
+        <div class="timeline-dot"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Carnegie_Mellon_University_seal.svg/150px-Carnegie_Mellon_University_seal.svg.png" alt="CMU" /></div>
         <div class="timeline-card">
           <div class="timeline-header">
             <span class="timeline-role">AI Systems Lead</span>
@@ -182,7 +192,7 @@
 
       <!-- 2 -->
       <div class="timeline-item fade-in fade-in-delay-1">
-        <div class="timeline-dot">⚙️</div>
+        <div class="timeline-dot timeline-dot-text">eQ</div>
         <div class="timeline-card">
           <div class="timeline-header">
             <span class="timeline-role">Software Engineer</span>
@@ -199,7 +209,7 @@
 
       <!-- 3 -->
       <div class="timeline-item fade-in fade-in-delay-2">
-        <div class="timeline-dot">🧪</div>
+        <div class="timeline-dot timeline-dot-text">eQ</div>
         <div class="timeline-card">
           <div class="timeline-header">
             <span class="timeline-role">Software Engineer Intern</span>
@@ -215,7 +225,7 @@
 
       <!-- 4 -->
       <div class="timeline-item fade-in fade-in-delay-3">
-        <div class="timeline-dot">💻</div>
+        <div class="timeline-dot timeline-dot-text">PICT</div>
         <div class="timeline-card">
           <div class="timeline-header">
             <span class="timeline-role">Software Intern</span>
@@ -231,7 +241,7 @@
 
       <!-- 5 -->
       <div class="timeline-item fade-in fade-in-delay-4">
-        <div class="timeline-dot">🧠</div>
+        <div class="timeline-dot"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" /></div>
         <div class="timeline-card">
           <div class="timeline-header">
             <span class="timeline-role">AI Intern</span>
